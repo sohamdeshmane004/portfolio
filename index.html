@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soham | AI & Machine Learning Engineer | NST Pune</title>
+  <meta name="description" content="Portfolio of Soham, 1st-year AI/ML student at Newton School of Technology, Pune. Seeking AI/ML and Software Engineering internships. Explore projects in Deep Learning, Computer Vision, and Generative AI.">
+  <meta name="keywords" content="Soham, AI Engineer, Machine Learning, Deep Learning, Newton School of Technology, NST Pune, Python, PyTorch, LangChain, Computer Vision, Internship">
+  <meta name="author" content="Soham">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Soham | AI & ML Engineer Portfolio">
+  <meta property="og:description" content="Building Intelligent Systems & Scalable ML Pipelines. 1st Year @ Newton School of Technology, Pune. Open to Internships.">
+  <meta property="og:image" content="./assets/images/avatar.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body class="cyber-theme">
+  <!-- Interactive Neural Background Canvas -->
+  <canvas id="cyber-canvas"></canvas>
+
+  <!-- Ambient Audio Indicator & Sound Toggle -->
+  <div class="audio-toggle-container" id="audio-toggle-container">
+    <button id="audio-toggle-btn" class="audio-btn" title="Toggle Cyber Audio FX" aria-label="Toggle Cyber Sound Effects">
+      <span class="audio-icon" id="audio-icon">🔇</span>
+      <span class="audio-label">FX: OFF</span>
+    </button>
+  </div>
+
+  <!-- HUD Top Bar -->
+  <header class="hud-header" id="hud-header">
+    <div class="hud-container">
+      <div class="hud-brand">
+        <a href="#hero" class="brand-link" id="brand-link">
+          <span class="brand-prompt">&gt;_</span>
+          <span class="brand-name">SOHAM</span>
+          <span class="brand-badge">NST.AI</span>
+        </a>
+      </div>
+
+      <nav class="hud-nav" id="hud-nav">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link" id="nav-about"><span class="nav-idx">01.</span>ABOUT</a></li>
+          <li><a href="#skills" class="nav-link" id="nav-skills"><span class="nav-idx">02.</span>SKILLS</a></li>
+          <li><a href="#projects" class="nav-link" id="nav-projects"><span class="nav-idx">03.</span>PROJECTS</a></li>
+          <li><a href="#education" class="nav-link" id="nav-education"><span class="nav-idx">04.</span>EDUCATION</a></li>
+          <li><a href="#contact" class="nav-link" id="nav-contact"><span class="nav-idx">05.</span>CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <div class="hud-actions">
+        <button class="terminal-trigger-btn" id="terminal-trigger-btn" title="Open Interactive Terminal (Ctrl + K)">
+          <span class="term-key">&gt;_</span>
+          <span class="term-text">TERMINAL</span>
+          <span class="term-shortcut">⌘K</span>
+        </button>
+        <button class="resume-header-btn" id="resume-header-btn">
+          <span>RESUME</span>
+          <svg class="btn-arrow" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+        </button>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="mobile-drawer-header">
+      <span class="drawer-title">&gt; NAVIGATION_SYSTEM</span>
+      <button class="drawer-close-btn" id="drawer-close-btn">&times;</button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#about" class="mobile-nav-link" data-target="about"><span class="nav-idx">01.</span>ABOUT // CORE</a></li>
+      <li><a href="#skills" class="mobile-nav-link" data-target="skills"><span class="nav-idx">02.</span>SKILLS // MATRIX</a></li>
+      <li><a href="#projects" class="mobile-nav-link" data-target="projects"><span class="nav-idx">03.</span>PROJECTS // REPO</a></li>
+      <li><a href="#education" class="mobile-nav-link" data-target="education"><span class="nav-idx">04.</span>EDUCATION // NST</a></li>
+      <li><a href="#contact" class="mobile-nav-link" data-target="contact"><span class="nav-idx">05.</span>CONTACT // UPLINK</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <button class="mobile-terminal-btn" id="mobile-terminal-btn">&gt;_ LAUNCH TERMINAL</button>
+      <button class="mobile-resume-btn" id="mobile-resume-btn">📄 VIEW FULL RESUME</button>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-content">
+          <div class="cyber-badge-wrapper">
+            <span class="live-beacon"></span>
+            <span class="cyber-badge-text">STATUS: AVAILABLE FOR SUMMER / FALL 2026 INTERNSHIPS</span>
+          </div>
+
+          <div class="hero-title-group">
+            <div class="hero-greeting">
+              <span class="greeting-symbol">//</span>
+              <span class="greeting-text">HELLO WORLD, I'M</span>
+            </div>
+            <h1 class="hero-name" id="hero-name">
+              SOHAM<span class="name-dot">.</span>
+            </h1>
+            <div class="hero-tagline-container">
+              <span class="tagline-prefix">&gt; </span>
+              <span class="hero-dynamic-text" id="hero-dynamic-text">Building Intelligent Systems</span>
+              <span class="typing-cursor">|</span>
+            </div>
+          </div>
+
+          <p class="hero-description">
+            First-year <strong>Computer Science & AI</strong> student at 
+            <span class="highlight-nst">Newton School of Technology, Pune</span>. 
+            Obsessed with turning foundational mathematics and deep neural architectures into high-throughput, real-world deployed software.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn-cyber-primary" id="btn-explore-projects">
+              <span class="btn-glitch-effect"></span>
+              <span class="btn-content">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                EXPLORE PROJECTS
+              </span>
+            </a>
+
+            <button class="btn-cyber-secondary" id="btn-launch-terminal-hero">
+              <span class="btn-content">
+                <span class="cmd-icon">&gt;_</span>
+                CLI TERMINAL
+              </span>
+            </button>
+
+            <button class="btn-cyber-outline" id="btn-hero-resume">
+              <span class="btn-content">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                VIEW RESUME
+              </span>
+            </button>
+          </div>
+
+          <!-- Hero Metrics Strip -->
+          <div class="hero-metrics">
+            <div class="metric-card">
+              <div class="metric-val" id="metric-models">15+</div>
+              <div class="metric-lbl">MODELS TRAINED</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <div class="metric-val" id="metric-latency">&lt;22ms</div>
+              <div class="metric-lbl">EDGE INFERENCE</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <div class="metric-val" id="metric-dsa">120+</div>
+              <div class="metric-lbl">DSA PROBLEMS</div>
+            </div>
+            <div class="metric-divider"></div>
+            <div class="metric-card">
+              <div class="metric-val" id="metric-nst">NST</div>
+              <div class="metric-lbl">PUNE CAMPUS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Cyber Visual Card -->
+        <div class="hero-visual">
+          <div class="avatar-card-wrapper" id="avatar-3d-card">
+            <div class="avatar-card-inner">
+              <div class="avatar-hud-top">
+                <span class="hud-node">NODE::AI-01</span>
+                <span class="hud-ping">24ms LATENCY</span>
+              </div>
+              <div class="avatar-img-frame">
+                <img src="./assets/images/avatar.jpg" alt="Soham - AI & ML Engineer at Newton School of Technology Pune" class="avatar-img" id="avatar-img" loading="eager">
+                <div class="scanline-overlay"></div>
+                <div class="corner-bracket top-left"></div>
+                <div class="corner-bracket top-right"></div>
+                <div class="corner-bracket bottom-left"></div>
+                <div class="corner-bracket bottom-right"></div>
+              </div>
+              <div class="avatar-hud-bottom">
+                <div class="hud-status-row">
+                  <span class="status-indicator online"></span>
+                  <span class="status-title">NEURAL CORE: ONLINE</span>
+                </div>
+                <div class="hud-tags">
+                  <span class="hud-tag">PYTORCH</span>
+                  <span class="hud-tag">LLMs</span>
+                  <span class="hud-tag">FASTAPI</span>
+                  <span class="hud-tag">OPENCV</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LIVE AI MODEL PLAYGROUND (Interactive Mini-Demo for Recruiters) -->
+    <section class="mini-demo-section" id="model-playground">
+      <div class="container">
+        <div class="playground-card">
+          <div class="playground-header">
+            <div class="playground-title">
+              <span class="terminal-dot red"></span>
+              <span class="terminal-dot yellow"></span>
+              <span class="terminal-dot green"></span>
+              <span class="playground-heading">&gt; LIVE_INFERENCE_DEMO // Sentiment & Intent Neural Classifier</span>
+            </div>
+            <span class="playground-badge">JS TENSOR SIMULATOR</span>
+          </div>
+
+          <div class="playground-body">
+            <p class="playground-desc">
+              Test Soham's simulated lightweight sentiment & intent inference engine right inside your browser! Type any prompt (e.g. an internship invite or tech inquiry):
+            </p>
+            <div class="playground-input-group">
+              <input type="text" id="demo-input" class="demo-input" placeholder="Try: 'We would love to interview Soham for our AI/ML internship!'" value="We would love to interview Soham for our AI/ML internship!">
+              <button id="demo-run-btn" class="demo-run-btn">
+                <span>INFER (RUN)</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </button>
+            </div>
+
+            <div class="inference-output" id="inference-output">
+              <div class="inf-metric">
+                <span class="inf-label">CLASSIFIED INTENT:</span>
+                <span class="inf-val highlight-green" id="inf-intent">INTERNSHIP_OFFER (POSITIVE)</span>
+              </div>
+              <div class="inf-metric">
+                <span class="inf-label">CONFIDENCE SCORE:</span>
+                <span class="inf-val" id="inf-conf">99.4%</span>
+              </div>
+              <div class="inf-metric">
+                <span class="inf-label">COMPUTE LATENCY:</span>
+                <span class="inf-val" id="inf-latency">8.4ms</span>
+              </div>
+              <div class="inf-metric">
+                <span class="inf-label">ACTION RECOMMENDED:</span>
+                <span class="inf-val highlight-cyan" id="inf-action">SCHEDULE INTERVIEW VIA CONTACT SECTION</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="tag-hash">//</span> 01. PROFILE OVERVIEW</div>
+          <h2 class="section-title">ENGINEERING EDGE &amp; PASSION</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-bio-column">
+            <div class="cyber-panel">
+              <h3 class="panel-heading">&gt; WHO_AM_I</h3>
+              <p class="panel-text">
+                I am a driven first-year undergraduate pursuing <strong>B.Tech in Computer Science &amp; Artificial Intelligence</strong> at 
+                <span class="text-glow">Newton School of Technology, Pune</span>. 
+                My mission is to crack competitive engineering internships by demonstrating exceptional problem-solving rigor, clean coding practices, and practical ML engineering skills.
+              </p>
+              <p class="panel-text">
+                Unlike traditional learners who stop at Jupyter notebooks, I build end-to-end applications: collecting data, structuring embeddings, training or fine-tuning models, wrapping them in asynchronous FastAPI backends, and containerizing them with Docker for reproducible deployment.
+              </p>
+
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <div class="hl-icon">⚡</div>
+                  <div class="hl-content">
+                    <span class="hl-title">Math &amp; Algorithmic Depth</span>
+                    <span class="hl-desc">Strong foundation in Multivariable Calculus, Linear Algebra, Matrix Decompositions, and DSA in C++ / Python.</span>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="hl-icon">🔬</div>
+                  <div class="hl-content">
+                    <span class="hl-title">Rapid Prototyper</span>
+                    <span class="hl-desc">Skilled in turning complex ML research papers and Hugging Face model cards into operational software.</span>
+                  </div>
+                </div>
+
+                <div class="highlight-item">
+                  <div class="hl-icon">🚀</div>
+                  <div class="hl-content">
+                    <span class="hl-title">High Energy &amp; Relentless Curiosity</span>
+                    <span class="hl-desc">Active hackathon participant, open-source explorer, and passionate peer-mentor at NST Pune.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-stats-column">
+            <div class="cyber-stat-card">
+              <div class="stat-header">
+                <span class="stat-title">ACADEMIC &amp; TECHNICAL TELEMETRY</span>
+                <span class="stat-badge">VERIFIED</span>
+              </div>
+              <ul class="telemetry-list">
+                <li class="telemetry-item">
+                  <span class="tel-label">INSTITUTION</span>
+                  <span class="tel-value">Newton School of Technology, Pune</span>
+                </li>
+                <li class="telemetry-item">
+                  <span class="tel-label">DEGREE</span>
+                  <span class="tel-value">B.Tech in CS &amp; Artificial Intelligence</span>
+                </li>
+                <li class="telemetry-item">
+                  <span class="tel-label">CURRENT YEAR</span>
+                  <span class="tel-value highlight-cyan">First Year (Freshman)</span>
+                </li>
+                <li class="telemetry-item">
+                  <span class="tel-label">PRIMARY LANGUAGE</span>
+                  <span class="tel-value">Python 3.11+ / C++ 20</span>
+                </li>
+                <li class="telemetry-item">
+                  <span class="tel-label">TARGET INTERNSHIP</span>
+                  <span class="tel-value highlight-green">AI/ML Intern / GenAI Intern</span>
+                </li>
+                <li class="telemetry-item">
+                  <span class="tel-label">LOCATION PREFERENCE</span>
+                  <span class="tel-value">Pune / Bengaluru / Hybrid / Remote</span>
+                </li>
+              </ul>
+
+              <div class="internship-pitch-box">
+                <div class="pitch-badge">&gt; WHY HIRE A 1ST YEAR LIKE SOHAM?</div>
+                <p class="pitch-text">
+                  "First-year students from NST Pune are trained on an intensive hands-on curriculum from Day 1. You get an intern with relentless drive, no ego, cutting-edge familiarity with 2026 AI tools, and the capability to absorb new codebases rapidly."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS MATRIX SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="tag-hash">//</span> 02. TECHNICAL PROFICIENCIES</div>
+          <h2 class="section-title">SKILLS &amp; ARCHITECTURAL MATRIX</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="skills-filter-group" id="skills-filter-group">
+          <button class="skill-filter-btn active" data-filter="all">ALL STACKS</button>
+          <button class="skill-filter-btn" data-filter="aiml">AI &amp; MACHINE LEARNING</button>
+          <button class="skill-filter-btn" data-filter="languages">LANGUAGES &amp; DSA</button>
+          <button class="skill-filter-btn" data-filter="systems">SYSTEMS &amp; DEPLOYMENT</button>
+        </div>
+
+        <!-- Skills Grid -->
+        <div class="skills-grid" id="skills-grid">
+          
+          <!-- AI & ML Category -->
+          <div class="skill-card" data-category="aiml">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">⚡</span>
+                <span class="skill-name">PyTorch &amp; Deep Learning</span>
+              </div>
+              <span class="skill-level">ADVANCED</span>
+            </div>
+            <p class="skill-desc">CNNs, ResNets, Custom Loss Functions, Optimizers, CUDA acceleration, Autograd debugging.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="aiml">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">🤖</span>
+                <span class="skill-name">GenAI, LLMs &amp; RAG</span>
+              </div>
+              <span class="skill-level">PROFICIENT</span>
+            </div>
+            <p class="skill-desc">LangChain, LlamaIndex, ChromaDB, Vector Embeddings, Prompt Engineering, Semantic Search.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 84%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="aiml">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">👁️</span>
+                <span class="skill-name">Computer Vision &amp; OpenCV</span>
+              </div>
+              <span class="skill-level">PROFICIENT</span>
+            </div>
+            <p class="skill-desc">YOLOv8, Object Detection, Tracking (DeepSORT), Image Augmentation, Bounding Box Telemetry.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 82%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="aiml">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">📊</span>
+                <span class="skill-name">Scikit-Learn, Pandas &amp; NumPy</span>
+              </div>
+              <span class="skill-level">ADVANCED</span>
+            </div>
+            <p class="skill-desc">Ensemble Methods (XGBoost, Random Forest), Feature Engineering, Statistical Analysis, PCA.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- Languages Category -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">🐍</span>
+                <span class="skill-name">Python 3 (Primary)</span>
+              </div>
+              <span class="skill-level">EXPERT</span>
+            </div>
+            <p class="skill-desc">OOP, Asyncio, Generators, Typing, Performance Profiling, Multi-threading in ML pipelines.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">⚙️</span>
+                <span class="skill-name">C++ &amp; DSA</span>
+              </div>
+              <span class="skill-level">ADVANCED</span>
+            </div>
+            <p class="skill-desc">STL, Memory Management, Trees, Graphs, Dynamic Programming, Competitive Coding.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="languages">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">💾</span>
+                <span class="skill-name">SQL &amp; Relational Databases</span>
+              </div>
+              <span class="skill-level">INTERMEDIATE</span>
+            </div>
+            <p class="skill-desc">PostgreSQL, SQLite, Complex Joins, Indexing, Schema Design, Data Extraction.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 78%;"></div>
+            </div>
+          </div>
+
+          <!-- Systems & Deployment Category -->
+          <div class="skill-card" data-category="systems">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">🚀</span>
+                <span class="skill-name">FastAPI &amp; REST APIs</span>
+              </div>
+              <span class="skill-level">PROFICIENT</span>
+            </div>
+            <p class="skill-desc">Serving ML model endpoints, Pydantic validation, Asynchronous route handlers, CORS.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="systems">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">🐳</span>
+                <span class="skill-name">Docker &amp; Containerization</span>
+              </div>
+              <span class="skill-level">INTERMEDIATE</span>
+            </div>
+            <p class="skill-desc">Multi-stage builds, Containerizing ML environments, Docker Compose, Port mapping.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 75%;"></div>
+            </div>
+          </div>
+
+          <div class="skill-card" data-category="systems">
+            <div class="skill-top">
+              <div class="skill-icon-name">
+                <span class="skill-glyph">🌿</span>
+                <span class="skill-name">Git &amp; GitHub Actions</span>
+              </div>
+              <span class="skill-level">ADVANCED</span>
+            </div>
+            <p class="skill-desc">Version control, Feature Branching, Pull Requests, Code Reviews, Basic CI/CD workflows.</p>
+            <div class="skill-bar-track">
+              <div class="skill-bar-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="tag-hash">//</span> 03. FEATURED BUILDS</div>
+          <h2 class="section-title">DEPLOYED AI &amp; ML SYSTEMS</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="projects-filter-group" id="projects-filter-group">
+          <button class="project-filter-btn active" data-filter="all">ALL PROJECTS</button>
+          <button class="project-filter-btn" data-filter="cv">COMPUTER VISION</button>
+          <button class="project-filter-btn" data-filter="genai">GENERATIVE AI / RAG</button>
+          <button class="project-filter-btn" data-filter="predictive">ANALYTICS &amp; ML</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- PROJECT 1: Computer Vision -->
+          <article class="project-card" data-category="cv" id="project-card-cv">
+            <div class="project-media">
+              <img src="./assets/images/project-cv.jpg" alt="NeuroVision Object Detection HUD" class="project-img" loading="lazy">
+              <div class="project-badge cv-tag">COMPUTER VISION</div>
+              <div class="project-overlay">
+                <button class="btn-inspect" data-project="cv">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  VIEW ARCHITECTURE
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="meta-tag">YOLOv8</span>
+                <span class="meta-tag">PyTorch</span>
+                <span class="meta-tag">OpenCV</span>
+                <span class="meta-tag">TensorRT</span>
+              </div>
+              <h3 class="project-name">NeuroVision: Real-Time Edge Object Tracker &amp; Spatial HUD</h3>
+              <p class="project-desc">
+                High-throughput computer vision pipeline executing sub-22ms multi-object detection and tracking. Deployed with synthetic data augmentation and automated spatial telemetry for edge robotics.
+              </p>
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>21.8ms</strong> Latency</div>
+                <div class="p-stat"><strong>94.2%</strong> mAP@50</div>
+                <div class="p-stat"><strong>60 FPS</strong> Video Stream</div>
+              </div>
+              <div class="project-actions">
+                <button class="btn-project-link primary view-arch-btn" data-project="cv">
+                  <span>Architecture &amp; Docs</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Codebase</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Generative AI / RAG -->
+          <article class="project-card" data-category="genai" id="project-card-rag">
+            <div class="project-media">
+              <img src="./assets/images/project-rag.jpg" alt="DocuQuery Multimodal RAG Graph" class="project-img" loading="lazy">
+              <div class="project-badge genai-tag">GENERATIVE AI / RAG</div>
+              <div class="project-overlay">
+                <button class="btn-inspect" data-project="rag">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  VIEW ARCHITECTURE
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="meta-tag">LangChain</span>
+                <span class="meta-tag">ChromaDB</span>
+                <span class="meta-tag">Llama 3</span>
+                <span class="meta-tag">FastAPI</span>
+              </div>
+              <h3 class="project-name">DocuQuery: Multimodal Local RAG &amp; Vector Retrieval Engine</h3>
+              <p class="project-desc">
+                Production-grade retrieval augmented generation pipeline. Employs hybrid sparse-dense vector search (BM25 + ChromaDB embeddings) with contextual reranking to eliminate hallucinations across 1,000+ page technical manuals.
+              </p>
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>0.85s</strong> Query Time</div>
+                <div class="p-stat"><strong>92%</strong> Faithfulness</div>
+                <div class="p-stat"><strong>Local</strong> Privacy First</div>
+              </div>
+              <div class="project-actions">
+                <button class="btn-project-link primary view-arch-btn" data-project="rag">
+                  <span>Architecture &amp; Docs</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Codebase</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Predictive ML -->
+          <article class="project-card" data-category="predictive" id="project-card-pulse">
+            <div class="project-media">
+              <img src="./assets/images/project-pulse.jpg" alt="PulseGuard Biosignal Anomaly Monitor" class="project-img" loading="lazy">
+              <div class="project-badge pred-tag">PREDICTIVE ML</div>
+              <div class="project-overlay">
+                <button class="btn-inspect" data-project="pulse">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                  VIEW ARCHITECTURE
+                </button>
+              </div>
+            </div>
+            <div class="project-content">
+              <div class="project-meta">
+                <span class="meta-tag">XGBoost</span>
+                <span class="meta-tag">Scikit-Learn</span>
+                <span class="meta-tag">Time-Series</span>
+                <span class="meta-tag">Docker</span>
+              </div>
+              <h3 class="project-name">PulseGuard: Real-Time Biosignal Anomaly Detection Engine</h3>
+              <p class="project-desc">
+                Machine learning diagnostic pipeline identifying cardiac arrhythmias and ST-segment elevations from multi-lead ECG time-series data. Includes dynamic thresholding and confidence scoring alerts.
+              </p>
+              <div class="project-stats-strip">
+                <div class="p-stat"><strong>98.4%</strong> ROC-AUC</div>
+                <div class="p-stat"><strong>0.01s</strong> Processing</div>
+                <div class="p-stat"><strong>Dockerized</strong> Microservice</div>
+              </div>
+              <div class="project-actions">
+                <button class="btn-project-link primary view-arch-btn" data-project="pulse">
+                  <span>Architecture &amp; Docs</span>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-project-link outline">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                  <span>Codebase</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & NST PUNE SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="tag-hash">//</span> 04. ACADEMIC HUB</div>
+          <h2 class="section-title">EDUCATION &amp; REPOSITORY</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-top-row">
+            <div class="edu-institution">
+              <span class="edu-flag">🎓 ACADEMIC JOURNEY</span>
+              <h3 class="edu-name">Newton School of Technology (NST), Pune</h3>
+              <p class="edu-degree">Bachelor of Technology (B.Tech) in Computer Science &amp; Artificial Intelligence</p>
+            </div>
+            <div class="edu-period">
+              <span class="period-badge">2025 — 2029 (Expected)</span>
+              <span class="location-badge">📍 Pune, Maharashtra, India</span>
+            </div>
+          </div>
+
+          <div class="edu-details-grid">
+            <div class="edu-detail-col">
+              <h4 class="col-title">&gt; CORE COURSEWORK COMPLETED &amp; IN PROGRESS</h4>
+              <ul class="course-list">
+                <li><span class="code-pill">CS101</span> Data Structures &amp; Algorithms in C++</li>
+                <li><span class="code-pill">AI102</span> Foundations of Machine Learning &amp; Neural Nets</li>
+                <li><span class="code-pill">MA101</span> Linear Algebra &amp; Multivariate Calculus</li>
+                <li><span class="code-pill">MA102</span> Probability &amp; Inferential Statistics</li>
+                <li><span class="code-pill">CS104</span> Object-Oriented Software Design &amp; Python</li>
+                <li><span class="code-pill">DB101</span> Database Management Systems &amp; SQL</li>
+              </ul>
+            </div>
+
+            <div class="edu-detail-col">
+              <h4 class="col-title">&gt; CAMPUS IMPACT &amp; LEADERSHIP</h4>
+              <div class="achievement-item">
+                <span class="ach-icon">🏆</span>
+                <div>
+                  <strong>NST Hackathon 2025 Finalist:</strong> Built an AI-driven automated code review assistant in 36 hours.
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="ach-icon">👥</span>
+                <div>
+                  <strong>NST AI/ML Guild Active Member:</strong> Leading hands-on workshops on PyTorch tensors, backprop, and Git workflows for freshman peers.
+                </div>
+              </div>
+              <div class="achievement-item">
+                <span class="ach-icon">💡</span>
+                <div>
+                  <strong>Competitive Programming:</strong> Regular solver on LeetCode &amp; Codeforces focusing on graphs, trees, and dynamic programming.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERNSHIP VALUE PROPOSITION SECTION -->
+    <section class="section hire-section" id="why-hire">
+      <div class="container">
+        <div class="hire-card">
+          <div class="hire-grid">
+            <div class="hire-left">
+              <div class="hire-badge">&gt; HIRING MANAGER SUMMARY</div>
+              <h2 class="hire-heading">Ready to ship value on Day 1 of my internship.</h2>
+              <p class="hire-sub">
+                Hiring managers often ask: <em>"Can a 1st-year student really contribute to our ML pipeline?"</em>
+                Here is my promise to your engineering team:
+              </p>
+              <div class="pitch-bullets">
+                <div class="p-bullet">
+                  <span class="b-check">✓</span>
+                  <div>
+                    <strong>Zero Hand-Holding in Git &amp; Tooling:</strong> Proficient in GitHub pull request workflows, branch management, Docker setups, and Linux CLI environments.
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <span class="b-check">✓</span>
+                  <div>
+                    <strong>Relentless Work Ethic:</strong> High energy, receptive to code reviews, fast debugger, and willing to tackle data cleaning, model benchmarking, and edge case test suites.
+                  </div>
+                </div>
+                <div class="p-bullet">
+                  <span class="b-check">✓</span>
+                  <div>
+                    <strong>Strong Mathematical Curiosity:</strong> I don't just import libraries blindly; I understand the loss gradients, matrix transformations, and loss landscapes underneath.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="hire-right">
+              <div class="resume-quickview-card">
+                <div class="rqv-header">
+                  <span class="rqv-title">CURRICULUM VITAE (CV)</span>
+                  <span class="rqv-badge">UPDATED 2026</span>
+                </div>
+                <div class="rqv-preview-box">
+                  <div class="rqv-line name">SOHAM — AI/ML ENGINEER</div>
+                  <div class="rqv-line sub">Newton School of Technology, Pune</div>
+                  <div class="rqv-divider"></div>
+                  <div class="rqv-line info">✦ PyTorch • GenAI • Computer Vision • FastAPI</div>
+                  <div class="rqv-line info">✦ 3 Production-Grade Repositories</div>
+                  <div class="rqv-line info">✦ Available for 2–6 Month Internship</div>
+                </div>
+                <div class="rqv-actions">
+                  <button class="btn-cyber-primary full-width" id="btn-view-cv-modal">
+                    <span>VIEW INTERACTIVE RESUME</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  </button>
+                  <button class="btn-cyber-secondary full-width" id="btn-download-cv">
+                    <span>DOWNLOAD RESUME (PDF)</span>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT & UPLINK SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag"><span class="tag-hash">//</span> 05. ESTABLISH CONNECTION</div>
+          <h2 class="section-title">COMMUNICATION UPLINK</h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Info Column -->
+          <div class="contact-info-panel">
+            <h3 class="contact-panel-title">&gt; DIRECT_CHANNELS</h3>
+            <p class="contact-panel-text">
+              Looking for an enthusiastic AI/ML intern for summer/winter 2026? Or want to discuss model fine-tuning, computer vision, or NST Pune? My inbox and terminal are always open!
+            </p>
+
+            <div class="channel-list">
+              <a href="mailto:soham.ai.intern@gmail.com" class="channel-card" id="contact-email-link">
+                <div class="channel-icon">✉️</div>
+                <div class="channel-info">
+                  <span class="ch-label">DIRECT EMAIL</span>
+                  <span class="ch-val">soham.ai.intern@gmail.com</span>
+                </div>
+                <span class="ch-copy" title="Copy Email">COPY</span>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">💼</div>
+                <div class="channel-info">
+                  <span class="ch-label">LINKEDIN</span>
+                  <span class="ch-val">linkedin.com/in/soham-ai-nst</span>
+                </div>
+                <span class="ch-arrow">↗</span>
+              </a>
+
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="channel-card">
+                <div class="channel-icon">🐙</div>
+                <div class="channel-info">
+                  <span class="ch-label">GITHUB REPOSITORY</span>
+                  <span class="ch-val">github.com/soham-ai-dev</span>
+                </div>
+                <span class="ch-arrow">↗</span>
+              </a>
+
+              <div class="channel-card static">
+                <div class="channel-icon">📍</div>
+                <div class="channel-info">
+                  <span class="ch-label">CAMPUS BASE</span>
+                  <span class="ch-val">Newton School of Technology, Pune, MH, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form Column -->
+          <div class="contact-form-panel">
+            <form id="contact-form" class="cyber-form" novalidate>
+              <div class="form-header">
+                <span class="terminal-dot red"></span>
+                <span class="terminal-dot yellow"></span>
+                <span class="terminal-dot green"></span>
+                <span class="form-header-title">TRANSMISSION_PACKET.sh</span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-name" class="cyber-label">&gt; SENDER_NAME *</label>
+                <input type="text" id="sender-name" class="cyber-input" placeholder="e.g. Alex (Engineering Recruiter / Tech Lead)" required>
+                <span class="form-error-msg" id="err-name">Please provide your name or organization</span>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-email" class="cyber-label">&gt; RETURN_ADDRESS (EMAIL) *</label>
+                <input type="email" id="sender-email" class="cyber-input" placeholder="e.g. recruiter@techfirm.ai" required>
+                <span class="form-error-msg" id="err-email">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="message-type" class="cyber-label">&gt; TRANSMISSION_TYPE</label>
+                <select id="message-type" class="cyber-select">
+                  <option value="internship" selected>🚀 AI/ML Internship Opportunity</option>
+                  <option value="interview">📅 Schedule Screening / Interview</option>
+                  <option value="project">🤝 Project Collaboration / Open Source</option>
+                  <option value="mentorship">💡 Mentorship / Networking</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="sender-msg" class="cyber-label">&gt; PAYLOAD (MESSAGE) *</label>
+                <textarea id="sender-msg" class="cyber-textarea" rows="4" placeholder="Tell me about your team, tech stack, or the problem you're solving..." required></textarea>
+                <span class="form-error-msg" id="err-msg">Please enter a message payload</span>
+              </div>
+
+              <button type="submit" class="btn-cyber-primary full-width" id="btn-submit-transmission">
+                <span class="btn-content">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  TRANSMIT PACKET (SEND)
+                </span>
+              </button>
+
+              <div class="form-status" id="form-status"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- INTERACTIVE TERMINAL MODAL -->
+  <div class="terminal-modal-overlay" id="terminal-modal">
+    <div class="terminal-window" id="terminal-window">
+      <div class="terminal-titlebar">
+        <div class="term-traffic-lights">
+          <span class="t-btn close" id="term-close-btn" title="Close Terminal"></span>
+          <span class="t-btn min" id="term-min-btn" title="Minimize"></span>
+          <span class="t-btn max" id="term-max-btn" title="Maximize"></span>
+        </div>
+        <div class="term-title-text">&gt;_ soham@nst-pune: ~/portfolio-cli (v1.0.4)</div>
+        <div class="term-help-pill">Type 'help' for commands</div>
+      </div>
+
+      <div class="terminal-body" id="terminal-output">
+        <div class="term-welcome-msg">
+          <pre class="term-ascii-logo">
+   ____ _____  __  _____     __  ___ 
+  / __// __ / / / / / _ \   /  |/  / 
+ _\ \ / /_/ // /_/ / __ |  / /|_/ /  
+/___/ \____/ \____/_/ |_| /_/  /_/   
+          </pre>
+          <p class="term-intro">
+            Welcome to <strong>Soham's Interactive Cyber Terminal</strong>!<br>
+            Affiliation: Newton School of Technology, Pune // B.Tech CS &amp; AI (1st Year)<br>
+            Type <span class="term-cmd-highlight">help</span> to view available commands, or <span class="term-cmd-highlight">sudo hire</span> for recruiter mode.
+          </p>
+        </div>
+      </div>
+
+      <div class="terminal-input-row">
+        <span class="term-prompt-prefix">soham@nst-pune:~$</span>
+        <input type="text" id="terminal-input" class="term-cli-input" autocomplete="off" spellcheck="false" autofocus placeholder="Type a command...">
+        <button id="terminal-submit-btn" class="term-send-btn">&crarr;</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROJECT ARCHITECTURE MODAL -->
+  <div class="modal-overlay" id="arch-modal">
+    <div class="modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge" id="arch-modal-badge">ARCHITECTURE SPECIFICATION</span>
+          <h3 class="modal-title" id="arch-modal-title">Project Architecture</h3>
+        </div>
+        <button class="modal-close-btn" id="arch-modal-close">&times;</button>
+      </div>
+
+      <div class="modal-body" id="arch-modal-body">
+        <!-- Injected via JavaScript dynamically -->
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-cyber-outline" id="arch-modal-close-btn">CLOSE</button>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn-cyber-primary" id="arch-modal-github">
+          <span>VIEW GITHUB REPO</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE RESUME MODAL -->
+  <div class="modal-overlay" id="resume-modal">
+    <div class="modal-container resume-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-group">
+          <span class="modal-badge">DOCUMENT VIEWER // RESUME</span>
+          <h3 class="modal-title">Soham — AI/ML Engineering Resume</h3>
+        </div>
+        <button class="modal-close-btn" id="resume-modal-close">&times;</button>
+      </div>
+
+      <div class="modal-body resume-body">
+        <div class="resume-paper" id="resume-paper">
+          <!-- Resume Header -->
+          <div class="res-head">
+            <h1 class="res-name">SOHAM</h1>
+            <p class="res-contact-bar">
+              Pune, Maharashtra, India | soham.ai.intern@gmail.com | Newton School of Technology (NST), Pune<br>
+              <a href="https://linkedin.com" target="_blank">LinkedIn</a> • 
+              <a href="https://github.com" target="_blank">GitHub</a> • 
+              <a href="#hero">Portfolio Website</a>
+            </p>
+          </div>
+
+          <!-- Summary -->
+          <div class="res-sec">
+            <h2 class="res-sec-title">CANDIDATE OBJECTIVE</h2>
+            <p class="res-text">
+              High-velocity 1st-year B.Tech Computer Science &amp; AI student at Newton School of Technology, Pune, actively seeking an AI/ML or Software Engineering Internship for Summer/Fall 2026. Proficient in PyTorch, Computer Vision, LangChain/RAG, and FastAPI with proven ability to deploy end-to-end containerized machine learning microservices.
+            </p>
+          </div>
+
+          <!-- Education -->
+          <div class="res-sec">
+            <h2 class="res-sec-title">EDUCATION</h2>
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">Newton School of Technology (NST)</span>
+                <span class="res-right">Pune, India</span>
+              </div>
+              <div class="res-row">
+                <span class="res-italic">Bachelor of Technology (B.Tech) — Computer Science &amp; Artificial Intelligence</span>
+                <span class="res-right">2025 – 2029 (Expected)</span>
+              </div>
+              <p class="res-subtext">Relevant Coursework: Data Structures &amp; Algorithms, Linear Algebra, Probability &amp; Statistics, Foundations of Deep Learning, Database Management.</p>
+            </div>
+          </div>
+
+          <!-- Technical Skills -->
+          <div class="res-sec">
+            <h2 class="res-sec-title">TECHNICAL SKILLS</h2>
+            <ul class="res-bullets">
+              <li><strong>Languages:</strong> Python (PyTorch, NumPy, Pandas, Scikit-learn), C++ (STL, Algorithms), SQL, Bash, JavaScript, HTML5/CSS3.</li>
+              <li><strong>AI &amp; Deep Learning:</strong> Convolutional Neural Networks (CNNs), YOLOv8, LangChain, ChromaDB, Llama 3, Hugging Face Transformers, OpenCV.</li>
+              <li><strong>Developer Tools &amp; Systems:</strong> FastAPI, Docker, Git/GitHub, Linux, Streamlit, Weights &amp; Biases, Postman.</li>
+            </ul>
+          </div>
+
+          <!-- Projects -->
+          <div class="res-sec">
+            <h2 class="res-sec-title">FEATURED TECHNICAL PROJECTS</h2>
+            
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">NeuroVision: Real-Time Edge Object Detection &amp; Spatial HUD</span>
+                <span class="res-right">Python, PyTorch, YOLOv8, OpenCV, FastAPI</span>
+              </div>
+              <ul class="res-bullets">
+                <li>Engineered a low-latency computer vision pipeline achieving 21.8ms inference (60 FPS) on edge stream data.</li>
+                <li>Trained YOLOv8 with custom synthetic image augmentations, boosting mAP@50 to 94.2% across diverse lighting.</li>
+                <li>Integrated automated bounding-box telemetry via FastAPI async endpoint for robotic localization.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">DocuQuery: Multimodal Local RAG &amp; Semantic Retrieval System</span>
+                <span class="res-right">LangChain, ChromaDB, Llama 3, Streamlit, Docker</span>
+              </div>
+              <ul class="res-bullets">
+                <li>Built a local retrieval-augmented generation engine indexing 1,000+ technical documents using dense vector embeddings.</li>
+                <li>Implemented hybrid BM25 and ChromaDB semantic retrieval with cross-encoder reranking, reducing hallucination by 34%.</li>
+                <li>Packaged multi-stage Docker container with Streamlit interactive UI and sub-second token streaming.</li>
+              </ul>
+            </div>
+
+            <div class="res-item">
+              <div class="res-row">
+                <span class="res-bold">PulseGuard: Real-Time Biosignal Anomaly Detection Engine</span>
+                <span class="res-right">Python, Scikit-Learn, XGBoost, Pandas, Docker</span>
+              </div>
+              <ul class="res-bullets">
+                <li>Developed time-series classification model on MIT-BIH Arrhythmia dataset, securing 98.4% ROC-AUC.</li>
+                <li>Extracted 28 time-domain and frequency-domain wavelet features with automated anomaly alerting.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Achievements -->
+          <div class="res-sec">
+            <h2 class="res-sec-title">ACHIEVEMENTS &amp; EXTRACURRICULARS</h2>
+            <ul class="res-bullets">
+              <li><strong>Finalist, NST Pune Hackathon 2025:</strong> Developed an AI Code Review Assistant in 36 hours.</li>
+              <li><strong>LeetCode DSA:</strong> Solved 120+ algorithmic challenges in C++ &amp; Python.</li>
+              <li><strong>Member, NST AI/ML Guild:</strong> Conducting peer sessions on PyTorch mechanics and Git version control.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn-cyber-outline" id="resume-modal-close-btn">CLOSE</button>
+        <button class="btn-cyber-primary" id="resume-modal-print-btn">
+          <span>PRINT / SAVE AS PDF</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification System -->
+  <div class="cyber-toast-container" id="toast-container"></div>
+
+  <!-- FOOTER -->
+  <footer class="cyber-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-logo">&gt;_ SOHAM.AI</div>
+        <p class="footer-tag">First-Year B.Tech CS &amp; AI @ Newton School of Technology, Pune.</p>
+        <p class="footer-copy">Designed with high-tech aesthetics, zero bloated dependencies, and pure vanilla engineering.</p>
+      </div>
+
+      <div class="footer-nav">
+        <span class="f-col-title">// JUMP LINKS</span>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-status">
+        <span class="f-col-title">// SYSTEM HEALTH</span>
+        <div class="f-status-pill"><span class="status-indicator online"></span> 100% UPTIME</div>
+        <div class="f-status-pill">PING: 14ms (PUNE NODE)</div>
+        <button class="btn-back-top" id="btn-back-top" title="Back to top">
+          <span>TOP &uarr;</span>
+        </button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Main JavaScript File -->
+  <script src="./script.js"></script>
+</body>
+</html>
